@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPedido">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/burgerIcon"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#ED0026"
+            android:layout_marginBottom="80dp"
+            android:paddingVertical="30dp"
+            app:srcCompat="@drawable/ic_baseline_fastfood_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textDadosDoPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dados do Pedido"
+            android:textSize="24sp"
+            android:textColor="#ED0026"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textNomeDoLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanche"
+            android:textSize="20sp"
+            android:textColor="#808080"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textPrecoUnitario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço unitário"
+            android:textSize="20sp"
+            android:textColor="#808080"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade"
+            android:textSize="20sp"
+            android:textColor="#808080"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textPrecoDoPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço Total"
+            android:layout_marginTop="40sp"
+            android:textSize="24sp"
+            android:textColor="#ED0026"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/textPrecoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$"
+            android:textSize="20sp"
+            android:textColor="#808080"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

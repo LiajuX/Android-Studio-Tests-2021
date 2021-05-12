@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/fitnessIcon"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="80dp"
+        android:background="#00CED1"
+        android:paddingVertical="30dp"
+        app:srcCompat="@drawable/ic_baseline_directions_run_24"
+        tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textFCMCalculada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FCM"
+            android:textColor="#00CED1"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="60dp" />
+
+        <TextView
+            android:id="@+id/textFCMExplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FCM = Frequência Cardíaca Máxima"
+            android:textSize="18sp"
+            android:textColor="#808080"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:id="@+id/textBPMExplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bpm = batimento por minuto"
+            android:textSize="18sp"
+            android:textColor="#808080"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="80dp" />
+
+        <TextView
+            android:id="@+id/textInformativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="20sp"
+            android:textColor="#00CED1"
+            android:layout_marginHorizontal="45dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/burgerIcon"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#ED0026"
+            android:layout_marginBottom="80dp"
+            android:paddingVertical="30dp"
+            app:srcCompat="@drawable/ic_baseline_fastfood_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textCodigoDoLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código"
+            android:textSize="22sp"
+            android:textColor="#ED0026"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputTextCodigoDoLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Insira o código do lanche"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/textQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade"
+            android:textSize="22sp"
+            android:textColor="#ED0026"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputTextQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Insira a quantidade"
+            android:inputType="number"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="80dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:onClick="mostrarTela2EProcessarPedido"
+            android:layout_width="220dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:text="FAZER PEDIDO"
+            android:textSize="20sp"
+            android:backgroundTint="#ED0026"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</FrameLayout>

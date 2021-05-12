@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fitnessIcon"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="80dp"
+            android:background="#00CED1"
+            android:paddingVertical="30dp"
+            app:srcCompat="@drawable/ic_baseline_directions_run_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="8dp"
+            android:text="Idade"
+            android:textColor="#00CED1"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/inputTextIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="number"
+            android:hint="Insira sua idade"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="140dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:onClick="mostrarTela2ECalcularFCM"
+            android:layout_width="190dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:text="CALCULAR"
+            android:textSize="22sp"
+            android:backgroundTint="#00CED1"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</FrameLayout>
