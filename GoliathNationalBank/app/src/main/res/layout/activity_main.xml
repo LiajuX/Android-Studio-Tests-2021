@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/ic_baseline_monetization_on_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textNomeDoBanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Goliath National Bank"
+            android:textColor="#ffa500"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Usuário"
+            android:textColor="#ffa500"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Insira seu nome de usuário"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Senha"
+            android:textColor="#ffa500"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Insira sua senha"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonGravar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#ffa500"
+                android:drawableLeft="@drawable/ic_baseline_cloud_upload_24"
+                android:onClick="gravaPreferencias"
+                android:paddingLeft="24dp"
+                android:text="Gravar"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonRecuperar"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#ffa500"
+                android:drawableLeft="@drawable/ic_baseline_cloud_download_24"
+                android:onClick="recuperaPreferencias"
+                android:paddingLeft="24dp"
+                android:text="Recuperar"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
