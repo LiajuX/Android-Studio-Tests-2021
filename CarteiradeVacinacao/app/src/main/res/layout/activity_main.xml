@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:paddingHorizontal="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/IDLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textColor="#808080"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/inputID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Insira o ID" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/doseLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dose"
+                android:textColor="#808080"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/inputDose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Insira a dose" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Nome"
+        android:textSize="22dp"
+        android:textColor="#808080" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Insira o nome da vacina" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Data de aplicação"
+        android:textSize="22dp"
+        android:textColor="#808080" />
+
+    <EditText
+        android:id="@+id/inputDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:maxLength="8"
+        android:inputType="text"
+        android:hint="ddmmyyyy" />
+
+    <TextView
+        android:id="@+id/clinicLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Unidade de saúde"
+        android:textSize="22dp"
+        android:textColor="#808080"/>
+
+    <EditText
+        android:id="@+id/inputClinic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="text"
+        android:hint="Insira a unidade de saúde" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/green_200"
+            android:text="próximo"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:onClick="showNextVaccine" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/green_200"
+            android:text="apagar"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:onClick="deleteVaccine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/green_200"
+            android:text="atualizar"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:onClick="updateVaccine" />
+
+        <Button
+            android:id="@+id/buttonNew"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/green_200"
+            android:text="novo"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:onClick="newVaccine" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:backgroundTint="@color/green_200"
+        android:text="inserir"
+        android:textSize="18dp"
+        android:textColor="#FFF"
+        android:onClick="insertNewVaccine" />
+
+</LinearLayout>
