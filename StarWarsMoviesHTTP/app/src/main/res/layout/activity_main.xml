@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingHorizontal="32dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="260dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/star_wars_logo" />
+
+        <TextView
+            android:id="@+id/IDLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="ID"
+            android:textColor="@color/yellow"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira o ID do filme"
+            android:textColor="@color/white"
+            android:textColorHint="#A1A1A1"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Pesquisar"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:onClick="searchForMovie" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="Título"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow" />
+
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título do filme"
+            android:textColor="@color/white"
+            android:textColorHint="#A1A1A1"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/directorLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Diretor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow" />
+
+        <EditText
+            android:id="@+id/inputDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diretor do filme"
+            android:textColor="@color/white"
+            android:textColorHint="#A1A1A1"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+                <Button
+                    android:id="@+id/buttonPost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:paddingVertical="10dp"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Post"
+                    android:textSize="18sp"
+                    android:textColor="#FFF"
+                    android:onClick="createNewMovie" />
+
+                <Button
+                    android:id="@+id/buttonPut"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Put"
+                    android:textSize="18sp"
+                    android:textColor="#FFF"
+                    android:onClick="updateMovie" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Delete"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:onClick="deleteMovie" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="22sp"
+            android:textColor="@color/yellow" />
+
+</LinearLayout>
