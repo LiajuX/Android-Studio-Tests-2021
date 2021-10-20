@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="80px"
+        android:paddingBottom="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="WebSocket"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/noun_chat_1857726_1"
+            tools:ignore="VectorDrawableCompat"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="50dp"
+            android:orientation="vertical"
+            android:background="@drawable/content_background">
+
+            <TextView
+                android:id="@+id/textChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:layout_marginBottom="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_500" />
+
+            <EditText
+                android:id="@+id/inputChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Comunicação WebSocket" />
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mensagem"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_500" />
+
+            <EditText
+                android:id="@+id/inputMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insira a mensagem"
+                android:inputType="text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="60dp">
+                <Button
+                    android:id="@+id/buttonStart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:layout_marginRight="30dp"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/blue_500"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:onClick="start" />
+
+                <Button
+                    android:id="@+id/buttonSendMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/blue_500"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:onClick="sendMessage" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
